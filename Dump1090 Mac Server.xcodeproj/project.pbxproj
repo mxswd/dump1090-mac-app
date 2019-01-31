@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		597085C122030159008AA7FB /* Acknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 597085C02203000F008AA7FB /* Acknowledgements.rtf */; };
+		59A7124421FC4718005D0F01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124321FC4718005D0F01 /* AppDelegate.m */; };
+		59A7124721FC4718005D0F01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124621FC4718005D0F01 /* ViewController.m */; };
+		59A7124921FC4718005D0F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124821FC4718005D0F01 /* Assets.xcassets */; };
+		59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124A21FC4718005D0F01 /* Main.storyboard */; };
+		59A7124F21FC4718005D0F01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124E21FC4718005D0F01 /* main.m */; };
+		59A7125A21FC4719005D0F01 /* Dump1090_Mac_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */; };
+		59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59BFF9A521FD19F200013769 /* dump1090-mac */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59A7125621FC4719005D0F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A7123721FC4718005D0F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59A7123E21FC4718005D0F01;
+			remoteInfo = "Dump1090 Mac Server";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59BFF9A721FD1A1F00013769 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		59440EF92202F64700AC4743 /* Dump1090 Mac Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dump1090 Mac Server.entitlements"; sourceTree = "<group>"; };
+		597085BF2202FE0D008AA7FB /* global.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = global.xcconfig; path = ../global.xcconfig; sourceTree = SOURCE_ROOT; };
+		597085C02203000F008AA7FB /* Acknowledgements.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Acknowledgements.rtf; sourceTree = "<group>"; };
+		59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dump1090 Mac Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A7124221FC4718005D0F01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59A7124321FC4718005D0F01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		59A7124521FC4718005D0F01 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		59A7124621FC4718005D0F01 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		59A7124821FC4718005D0F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59A7124B21FC4718005D0F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59A7124D21FC4718005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59A7124E21FC4718005D0F01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dump1090 Mac ServerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dump1090_Mac_ServerTests.m; sourceTree = "<group>"; };
+		59A7125B21FC4719005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BFF9A521FD19F200013769 /* dump1090-mac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "dump1090-mac"; path = "/usr/local/bin/dump1090-mac"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59A7123C21FC4718005D0F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59A7125221FC4719005D0F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59A7123621FC4718005D0F01 = {
+			isa = PBXGroup;
+			children = (
+				59A7124121FC4718005D0F01 /* Dump1090 Mac Server */,
+				59A7125821FC4719005D0F01 /* Dump1090 Mac ServerTests */,
+				59A7124021FC4718005D0F01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59A7124021FC4718005D0F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */,
+				59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59A7124121FC4718005D0F01 /* Dump1090 Mac Server */ = {
+			isa = PBXGroup;
+			children = (
+				597085BF2202FE0D008AA7FB /* global.xcconfig */,
+				59440EF92202F64700AC4743 /* Dump1090 Mac Server.entitlements */,
+				597085C02203000F008AA7FB /* Acknowledgements.rtf */,
+				59A7124221FC4718005D0F01 /* AppDelegate.h */,
+				59A7124321FC4718005D0F01 /* AppDelegate.m */,
+				59A7124521FC4718005D0F01 /* ViewController.h */,
+				59A7124621FC4718005D0F01 /* ViewController.m */,
+				59A7124821FC4718005D0F01 /* Assets.xcassets */,
+				59BFF9A521FD19F200013769 /* dump1090-mac */,
+				59A7124A21FC4718005D0F01 /* Main.storyboard */,
+				59A7124D21FC4718005D0F01 /* Info.plist */,
+				59A7124E21FC4718005D0F01 /* main.m */,
+			);
+			path = "Dump1090 Mac Server";
+			sourceTree = "<group>";
+		};
+		59A7125821FC4719005D0F01 /* Dump1090 Mac ServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */,
+				59A7125B21FC4719005D0F01 /* Info.plist */,
+			);
+			path = "Dump1090 Mac ServerTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59A7125E21FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac Server" */;
+			buildPhases = (
+				59A7123B21FC4718005D0F01 /* Sources */,
+				59A7123C21FC4718005D0F01 /* Frameworks */,
+				59A7123D21FC4718005D0F01 /* Resources */,
+				59BFF9A721FD1A1F00013769 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dump1090 Mac Server";
+			productName = "Dump1090 Mac Server";
+			productReference = 59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59A7125421FC4719005D0F01 /* Dump1090 Mac ServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59A7126121FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac ServerTests" */;
+			buildPhases = (
+				59A7125121FC4719005D0F01 /* Sources */,
+				59A7125221FC4719005D0F01 /* Frameworks */,
+				59A7125321FC4719005D0F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59A7125721FC4719005D0F01 /* PBXTargetDependency */,
+			);
+			name = "Dump1090 Mac ServerTests";
+			productName = "Dump1090 Mac ServerTests";
+			productReference = 59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59A7123721FC4718005D0F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Maxwell Swadling";
+				TargetAttributes = {
+					59A7123E21FC4718005D0F01 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					59A7125421FC4719005D0F01 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 59A7123E21FC4718005D0F01;
+					};
+				};
+			};
+			buildConfigurationList = 59A7123A21FC4718005D0F01 /* Build configuration list for PBXProject "Dump1090 Mac Server" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59A7123621FC4718005D0F01;
+			productRefGroup = 59A7124021FC4718005D0F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */,
+				59A7125421FC4719005D0F01 /* Dump1090 Mac ServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59A7123D21FC4718005D0F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597085C122030159008AA7FB /* Acknowledgements.rtf in Resources */,
+				59A7124921FC4718005D0F01 /* Assets.xcassets in Resources */,
+				59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59A7125321FC4719005D0F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59A7123B21FC4718005D0F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A7124721FC4718005D0F01 /* ViewController.m in Sources */,
+				59A7124F21FC4718005D0F01 /* main.m in Sources */,
+				59A7124421FC4718005D0F01 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59A7125121FC4719005D0F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A7125A21FC4719005D0F01 /* Dump1090_Mac_ServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59A7125721FC4719005D0F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */;
+			targetProxy = 59A7125621FC4719005D0F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59A7124A21FC4718005D0F01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59A7124B21FC4718005D0F01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59A7125C21FC4719005D0F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597085BF2202FE0D008AA7FB /* global.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		59A7125D21FC4719005D0F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597085BF2202FE0D008AA7FB /* global.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		59A7125F21FC4719005D0F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dump1090 Mac Server/Dump1090 Mac Server.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "$(TEAMID)";
+				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-Server";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		59A7126021FC4719005D0F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dump1090 Mac Server/Dump1090 Mac Server.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "$(TEAMID)";
+				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-Server";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		59A7126221FC4719005D0F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-ServerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
+			};
+			name = Debug;
+		};
+		59A7126321FC4719005D0F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-ServerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59A7123A21FC4718005D0F01 /* Build configuration list for PBXProject "Dump1090 Mac Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A7125C21FC4719005D0F01 /* Debug */,
+				59A7125D21FC4719005D0F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59A7125E21FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A7125F21FC4719005D0F01 /* Debug */,
+				59A7126021FC4719005D0F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59A7126121FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac ServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A7126221FC4719005D0F01 /* Debug */,
+				59A7126321FC4719005D0F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59A7123721FC4718005D0F01 /* Project object */;
+}
