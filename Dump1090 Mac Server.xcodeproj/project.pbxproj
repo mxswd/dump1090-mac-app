@@ -429,7 +429,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y6S72U574H;
+				DEVELOPMENT_TEAM = "$(TEAMID)";
 				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,7 +448,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y6S72U574H;
+				DEVELOPMENT_TEAM = "$(TEAMID)";
 				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
