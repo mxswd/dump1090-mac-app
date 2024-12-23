@@ -52,7 +52,7 @@
 - (void)launchServer {
     task = [[NSTask alloc] init];
     task.executableURL = [[NSBundle mainBundle] URLForAuxiliaryExecutable:@"dump1090-mac"];
-    task.arguments = @[];
+    task.arguments = @[@"--net"];
     task.environment = @{};
     NSPipe *taskOut = [NSPipe pipe];
     NSPipe *errOut = [NSPipe pipe];
