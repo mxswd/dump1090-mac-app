@@ -72,15 +72,16 @@
     consoleView.string = @"";
     task.standardOutput = taskOut;
     task.standardError = errOut;
+    __weak ViewController *weakSelf = self;
     [task setTerminationHandler:^(NSTask * _Nonnull task) {
         taskOut.fileHandleForReading.readabilityHandler = nil;
         errOut.fileHandleForReading.readabilityHandler = nil;
         NSData *finalOut = [taskOut.fileHandleForReading readDataToEndOfFile];
         NSData *finalErr = [errOut.fileHandleForReading readDataToEndOfFile];
         dispatch_sync(dispatch_get_main_queue(), ^{
-            [self appendConsole:finalOut];
-            [self appendConsole:finalErr];
-            [self setServerState:false];
+            [weakSelf appendConsole:finalOut];
+            [weakSelf appendConsole:finalErr];
+            [weakSelf setServerState:false];
         });
     }];
     
