@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		59440EF92202F64700AC4743 /* Dump1090 Mac Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dump1090 Mac Server.entitlements"; sourceTree = "<group>"; };
-		597085BF2202FE0D008AA7FB /* global.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = global.xcconfig; path = ../global.xcconfig; sourceTree = SOURCE_ROOT; };
 		597085C02203000F008AA7FB /* Acknowledgements.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Acknowledgements.rtf; sourceTree = "<group>"; };
 		59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dump1090 Mac Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A7124221FC4718005D0F01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +55,7 @@
 		59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dump1090 Mac ServerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dump1090_Mac_ServerTests.m; sourceTree = "<group>"; };
 		59A7125B21FC4719005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59BFF9A521FD19F200013769 /* dump1090-mac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "dump1090-mac"; path = "/usr/local/bin/dump1090-mac"; sourceTree = "<absolute>"; };
+		59BFF9A521FD19F200013769 /* dump1090-mac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "dump1090-mac"; path = "Dump1090 Mac Server/dump1090-mac"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +97,6 @@
 		59A7124121FC4718005D0F01 /* Dump1090 Mac Server */ = {
 			isa = PBXGroup;
 			children = (
-				597085BF2202FE0D008AA7FB /* global.xcconfig */,
 				59440EF92202F64700AC4743 /* Dump1090 Mac Server.entitlements */,
 				597085C02203000F008AA7FB /* Acknowledgements.rtf */,
 				59A7124221FC4718005D0F01 /* AppDelegate.h */,
@@ -270,7 +268,6 @@
 /* Begin XCBuildConfiguration section */
 		59A7125C21FC4719005D0F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 597085BF2202FE0D008AA7FB /* global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -330,7 +327,6 @@
 		};
 		59A7125D21FC4719005D0F01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 597085BF2202FE0D008AA7FB /* global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -386,17 +382,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dump1090 Mac Server/Dump1090 Mac Server.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "$(TEAMID)";
+				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-Server";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -407,17 +403,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dump1090 Mac Server/Dump1090 Mac Server.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "$(TEAMID)";
+				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-Server";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -436,7 +432,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-ServerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-ServerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
 			};
@@ -455,7 +451,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(COMPANY_NAMESPACE).Dump1090-Mac-ServerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-ServerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
 			};
