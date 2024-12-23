@@ -14,7 +14,7 @@
 		59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124A21FC4718005D0F01 /* Main.storyboard */; };
 		59A7124F21FC4718005D0F01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124E21FC4718005D0F01 /* main.m */; };
 		59A7125A21FC4719005D0F01 /* Dump1090_Mac_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */; };
-		59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59BFF9A521FD19F200013769 /* dump1090-mac */; };
+		59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59BFF9A521FD19F200013769 /* dump1090-mac */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
