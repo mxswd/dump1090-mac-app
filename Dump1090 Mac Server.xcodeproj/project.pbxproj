@@ -13,19 +13,8 @@
 		59A7124921FC4718005D0F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124821FC4718005D0F01 /* Assets.xcassets */; };
 		59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124A21FC4718005D0F01 /* Main.storyboard */; };
 		59A7124F21FC4718005D0F01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124E21FC4718005D0F01 /* main.m */; };
-		59A7125A21FC4719005D0F01 /* Dump1090_Mac_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */; };
 		59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59BFF9A521FD19F200013769 /* dump1090-mac */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		59A7125621FC4719005D0F01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59A7123721FC4718005D0F01 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59A7123E21FC4718005D0F01;
-			remoteInfo = "Dump1090 Mac Server";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		59BFF9A721FD1A1F00013769 /* CopyFiles */ = {
@@ -52,21 +41,11 @@
 		59A7124B21FC4718005D0F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59A7124D21FC4718005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A7124E21FC4718005D0F01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dump1090 Mac ServerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dump1090_Mac_ServerTests.m; sourceTree = "<group>"; };
-		59A7125B21FC4719005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59BFF9A521FD19F200013769 /* dump1090-mac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "dump1090-mac"; path = "Dump1090 Mac Server/dump1090-mac"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		59A7123C21FC4718005D0F01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		59A7125221FC4719005D0F01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				59A7124121FC4718005D0F01 /* Dump1090 Mac Server */,
-				59A7125821FC4719005D0F01 /* Dump1090 Mac ServerTests */,
 				59A7124021FC4718005D0F01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */,
-				59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,15 +87,6 @@
 				59A7124E21FC4718005D0F01 /* main.m */,
 			);
 			path = "Dump1090 Mac Server";
-			sourceTree = "<group>";
-		};
-		59A7125821FC4719005D0F01 /* Dump1090 Mac ServerTests */ = {
-			isa = PBXGroup;
-			children = (
-				59A7125921FC4719005D0F01 /* Dump1090_Mac_ServerTests.m */,
-				59A7125B21FC4719005D0F01 /* Info.plist */,
-			);
-			path = "Dump1090 Mac ServerTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,24 +110,6 @@
 			productReference = 59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */;
 			productType = "com.apple.product-type.application";
 		};
-		59A7125421FC4719005D0F01 /* Dump1090 Mac ServerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 59A7126121FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac ServerTests" */;
-			buildPhases = (
-				59A7125121FC4719005D0F01 /* Sources */,
-				59A7125221FC4719005D0F01 /* Frameworks */,
-				59A7125321FC4719005D0F01 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				59A7125721FC4719005D0F01 /* PBXTargetDependency */,
-			);
-			name = "Dump1090 Mac ServerTests";
-			productName = "Dump1090 Mac ServerTests";
-			productReference = 59A7125521FC4719005D0F01 /* Dump1090 Mac ServerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +130,6 @@
 							};
 						};
 					};
-					59A7125421FC4719005D0F01 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 59A7123E21FC4718005D0F01;
-					};
 				};
 			};
 			buildConfigurationList = 59A7123A21FC4718005D0F01 /* Build configuration list for PBXProject "Dump1090 Mac Server" */;
@@ -200,7 +146,6 @@
 			projectRoot = "";
 			targets = (
 				59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */,
-				59A7125421FC4719005D0F01 /* Dump1090 Mac ServerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,13 +158,6 @@
 				597085C122030159008AA7FB /* Acknowledgements.rtf in Resources */,
 				59A7124921FC4718005D0F01 /* Assets.xcassets in Resources */,
 				59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		59A7125321FC4719005D0F01 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,23 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59A7125121FC4719005D0F01 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59A7125A21FC4719005D0F01 /* Dump1090_Mac_ServerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		59A7125721FC4719005D0F01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */;
-			targetProxy = 59A7125621FC4719005D0F01 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		59A7124A21FC4718005D0F01 /* Main.storyboard */ = {
@@ -419,44 +341,6 @@
 			};
 			name = Release;
 		};
-		59A7126221FC4719005D0F01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "$(TEAMID)";
-				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-ServerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
-			};
-			name = Debug;
-		};
-		59A7126321FC4719005D0F01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "$(TEAMID)";
-				INFOPLIST_FILE = "Dump1090 Mac ServerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-ServerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dump1090 Mac Server.app/Contents/MacOS/Dump1090 Mac Server";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,15 +358,6 @@
 			buildConfigurations = (
 				59A7125F21FC4719005D0F01 /* Debug */,
 				59A7126021FC4719005D0F01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		59A7126121FC4719005D0F01 /* Build configuration list for PBXNativeTarget "Dump1090 Mac ServerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				59A7126221FC4719005D0F01 /* Debug */,
-				59A7126321FC4719005D0F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
