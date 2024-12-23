@@ -310,6 +310,7 @@
 				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -331,6 +332,7 @@
 				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
