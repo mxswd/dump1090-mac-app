@@ -7,8 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "Dump1090API.h"
 
 #define NOUSB @"No USB Device"
+
+@interface ViewController ()
+- (void)appendConsole:(NSData *)data;
+@end
+
+static void consoleOutput(const char *buf, size_t len, void *ctx) {
+    NSData *d = [NSData dataWithBytes:buf length:len];
+    __weak ViewController *weakSelf = (__bridge ViewController *)ctx;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf appendConsole:d];
+    });
+}
 
 @implementation ViewController {
     NSString *serverPath;
@@ -18,7 +31,7 @@
     __unsafe_unretained IBOutlet NSTextView *consoleView;
     BOOL serverRunning;
     NSNetService *service;
-    NSTask *task;
+    NSThread *serverThread;
 }
 
 - (void)viewDidLoad {
@@ -31,7 +44,7 @@
 }
 
 - (IBAction)startServer:(id)sender {
-    if (!serverRunning) {
+    if (!serverThread) {
         [self launchServer];
     } else {
         [self killServer];
@@ -50,51 +63,36 @@
 }
 
 - (void)launchServer {
-    task = [[NSTask alloc] init];
-    task.executableURL = [[NSBundle mainBundle] URLForAuxiliaryExecutable:@"dump1090-mac"];
-    task.arguments = @[@"--net"];
-    task.environment = @{};
-    NSPipe *taskOut = [NSPipe pipe];
-    NSPipe *errOut = [NSPipe pipe];
-
-    [taskOut.fileHandleForReading setReadabilityHandler:^(NSFileHandle * _Nonnull fh) {
-        NSData *d = [fh availableData];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [self appendConsole:d];
-        });
-    }];
-    [errOut.fileHandleForReading setReadabilityHandler:^(NSFileHandle * _Nonnull fh) {
-        NSData *d = [fh availableData];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [self appendConsole:d];
-        });
-    }];
     consoleView.string = @"";
-    task.standardOutput = taskOut;
-    task.standardError = errOut;
+    dump1090_set_output_handler(consoleOutput, (__bridge void *)self);
+
     __weak ViewController *weakSelf = self;
-    [task setTerminationHandler:^(NSTask * _Nonnull task) {
-        taskOut.fileHandleForReading.readabilityHandler = nil;
-        errOut.fileHandleForReading.readabilityHandler = nil;
-        NSData *finalOut = [taskOut.fileHandleForReading readDataToEndOfFile];
-        NSData *finalErr = [errOut.fileHandleForReading readDataToEndOfFile];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [weakSelf appendConsole:finalOut];
-            [weakSelf appendConsole:finalErr];
-            [weakSelf setServerState:false];
+    serverThread = [[NSThread alloc] initWithBlock:^{
+        char *argv[] = {"dump1090", "--net", NULL};
+        dump1090_main(2, argv);
+        // Queued after any console output from the run, so it lands last
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf serverDidFinish];
         });
     }];
-    
-    NSError *e;
-    if (![task launchAndReturnError:&e]) {
-        consoleView.string = [NSString stringWithFormat:@"failed to launch dump1090\n%@", e.localizedDescription];
-    } else {
-        [self setServerState:true];
-    }
+    serverThread.name = @"dump1090";
+    // dump1090 was written to run on a process main thread
+    serverThread.stackSize = 8 * 1024 * 1024;
+    [serverThread start];
+    [self setServerState:true];
+}
+
+- (void)serverDidFinish {
+    serverThread = nil;
+    startButton.enabled = YES;
+    [self setServerState:false];
 }
 
 - (void)appendConsole:(NSData *)data {
     NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    if (str == nil) {
+        return;
+    }
     if ([str hasPrefix:@"No supported RTLSDR devices found."]) {
         statusField.stringValue = NOUSB;
     }
@@ -103,13 +101,10 @@
 }
 
 - (void)killServer {
-    [task interrupt];
-    usleep(10);
-    if ([task isRunning]) {
-        [task terminate];
-    }
-    task = nil;
-    [self setServerState:false];
+    // serverDidFinish re-enables the button once dump1090 has shut down
+    startButton.enabled = NO;
+    statusField.stringValue = @"Stopping...";
+    dump1090_stop();
 }
 
 - (void)setServerState:(BOOL)running {

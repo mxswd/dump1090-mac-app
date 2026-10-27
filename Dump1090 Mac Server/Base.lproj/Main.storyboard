@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="25098"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -620,7 +620,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -719,14 +719,14 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-uP-Ogx">
                                 <rect key="frame" x="360" y="184" width="100" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="Fui-QN-S90"/>
-                                    <constraint firstAttribute="width" constant="100" id="U1z-8t-g7i"/>
-                                </constraints>
                                 <buttonCell key="cell" type="square" title="Start" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JCp-8r-iFM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Fui-QN-S90"/>
+                                    <constraint firstAttribute="width" constant="100" id="U1z-8t-g7i"/>
+                                </constraints>
                                 <connections>
                                     <action selector="startServer:" target="XfG-lQ-9wD" id="JYG-vw-w6K"/>
                                 </connections>
@@ -752,12 +752,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="6pQ-h1-sx4"/>
                                 </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="2Ml-xs-nnI">
+                                    <rect key="frame" x="-100" y="-100" width="440" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="y2r-UM-abU">
-                                    <rect key="frame" x="424" y="0.0" width="16" height="117"/>
+                                    <rect key="frame" x="423" y="0.0" width="17" height="117"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="awv-P6-cHa">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="awv-P6-cHa">
                                 <rect key="frame" x="18" y="141" width="444" height="14"/>
                                 <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Console" id="WqH-TX-P6K">
                                     <font key="font" metaFont="smallSystem"/>
@@ -768,7 +772,7 @@
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="3ho-5o-qYN">
                                 <rect key="frame" x="0.0" y="161" width="480" height="5"/>
                             </box>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XFP-lx-2ay">
+                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XFP-lx-2ay">
                                 <rect key="frame" x="112" y="207" width="136" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="WGT-kG-GeG"/>
@@ -780,7 +784,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-q5-nL0">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-q5-nL0">
                                 <rect key="frame" x="18" y="237" width="88" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="FZz-F8-7Aa"/>
@@ -792,7 +796,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-dN-pMZ">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-dN-pMZ">
                                 <rect key="frame" x="110" y="237" width="140" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="J1s-mr-Zwc"/>
@@ -804,7 +808,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="de4-CP-fUC">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="de4-CP-fUC">
                                 <rect key="frame" x="18" y="210" width="88" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="MD4-sH-3ae"/>
@@ -817,19 +821,19 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="32s-zw-iF2">
-                                <rect key="frame" x="110" y="182" width="140" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="jLo-b3-NQw"/>
-                                </constraints>
+                                <rect key="frame" x="112" y="182" width="136" height="16"/>
                                 <buttonCell key="cell" type="check" title="Discovery Enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="peg-LX-Ehc">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="jLo-b3-NQw"/>
+                                </constraints>
                                 <connections>
                                     <action selector="toggleNetworkDiscovery:" target="XfG-lQ-9wD" id="u69-gn-WOa"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-1i-vFc">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-1i-vFc">
                                 <rect key="frame" x="18" y="183" width="88" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="KN6-VZ-Oce"/>

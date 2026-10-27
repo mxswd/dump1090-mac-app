@@ -7,29 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E1BC267489DE9A891D9046 /* tuner_fc0013.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C0CCFABCBEC98B1DC904EF /* tuner_fc0013.c */; };
+		097A950F1D322164911E0534 /* mode_s.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C91D2680C310460A3C7C4B2 /* mode_s.c */; };
+		0C00BF92E42329D5F5DC56B4 /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 97B3F1C413F9BB4D3272E40F /* sync.c */; };
+		0F503D60D26E167FE018A20B /* tuner_e4k.c in Sources */ = {isa = PBXBuildFile; fileRef = FAE775DF680D70B6ED3FA637 /* tuner_e4k.c */; };
+		111A5A91F6E939CB6CBBF8CE /* hotplug.c in Sources */ = {isa = PBXBuildFile; fileRef = 23CEF5136DC7A38ED4EFE775 /* hotplug.c */; };
+		111FC7E3FDC74FB9BA2A2CB7 /* dump1090.c in Sources */ = {isa = PBXBuildFile; fileRef = D99F0DF5AD397991188A9CC0 /* dump1090.c */; };
+		248056C942388BE2EDBEA3CF /* net_io.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9DD17D4EF4726DB3601A96 /* net_io.c */; };
+		25686A9F9FEA5DB7FC23C999 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9201B72A27F1C9DE6647F6 /* IOKit.framework */; };
+		3E47D61FACD2D656C50AD82D /* interactive.c in Sources */ = {isa = PBXBuildFile; fileRef = ACB6C5DA4522DF9A2F1B79AF /* interactive.c */; };
+		3E6C4B30F483CF742DD73EE0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6022C8EF8EBA2A9FCED107 /* CoreFoundation.framework */; };
+		41C046DFED9654098698D4D5 /* tuner_r82xx.c in Sources */ = {isa = PBXBuildFile; fileRef = 12DB178991E7AEC71FE57A3A /* tuner_r82xx.c */; };
+		476B8F72BBB57C18118D69C2 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E8348B612B013523083EEE /* libusb-1.0.a */; };
+		53BA49BDA3FC8D6A91CFA0BB /* anet.c in Sources */ = {isa = PBXBuildFile; fileRef = 38523BAEBF273D8899A1C89A /* anet.c */; };
 		597085C122030159008AA7FB /* Acknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 597085C02203000F008AA7FB /* Acknowledgements.rtf */; };
 		59A7124421FC4718005D0F01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124321FC4718005D0F01 /* AppDelegate.m */; };
 		59A7124721FC4718005D0F01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124621FC4718005D0F01 /* ViewController.m */; };
 		59A7124921FC4718005D0F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124821FC4718005D0F01 /* Assets.xcassets */; };
 		59A7124C21FC4718005D0F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A7124A21FC4718005D0F01 /* Main.storyboard */; };
 		59A7124F21FC4718005D0F01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7124E21FC4718005D0F01 /* main.m */; };
-		59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59BFF9A521FD19F200013769 /* dump1090-mac */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		761DD20E8724995D81C26BFF /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EFC58CC2916EF2F27154BDF /* io.c */; };
+		80F0EB66B832CFB96B13A178 /* libdump1090.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A04437B5B66E422E2A5721 /* libdump1090.a */; };
+		844A310648BF5454072AB455 /* librtlsdr.c in Sources */ = {isa = PBXBuildFile; fileRef = FF34EF2186614985B7F02907 /* librtlsdr.c */; };
+		865B69B9B28B9E5FE3477583 /* strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 51841F7B41C04DD3A824EC24 /* strerror.c */; };
+		8E56E2E55BFE75E077B55ACB /* Dump1090Output.c in Sources */ = {isa = PBXBuildFile; fileRef = 75692E1CEF47C99FE9079B40 /* Dump1090Output.c */; };
+		934891087E4FB8E671251D95 /* tuner_fc2580.c in Sources */ = {isa = PBXBuildFile; fileRef = AD0B476D559DD0F566786E81 /* tuner_fc2580.c */; };
+		990270100AE8516F46E44F61 /* tuner_fc0012.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FA9C449F613F6B26A89C1 /* tuner_fc0012.c */; };
+		D99081E21BC3EDF4056E0163 /* threads_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 88B03899C731B9CC38D34D35 /* threads_posix.c */; };
+		E58E287BDC1597A85E0D90BC /* librtlsdr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10527F485F9582BE0AB87C4C /* librtlsdr.a */; };
+		E64F03EB1985DF577A7CFAD9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE992F0C1795DFC31C3D7CAF /* Security.framework */; };
+		E805593308397F66D8D81EEF /* darwin_usb.c in Sources */ = {isa = PBXBuildFile; fileRef = 55E670E1465AA18A9CE0BE3B /* darwin_usb.c */; };
+		F0CEEC6999FCEBD3D6D31B29 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = F6485830C2C9B4DAC3AE69E1 /* core.c */; };
+		F1F1B8834B3A49176A1E4CB3 /* events_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 367C361B213B21A9C877D139 /* events_posix.c */; };
+		F252AE34B6B7F829AA322EBA /* descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 03CCD2FAB28F577B1FDA488C /* descriptor.c */; };
+		FDCCCD13E187DC4E2392B3ED /* mode_ac.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A20C998C21AD2590A520B67 /* mode_ac.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		59BFF9A721FD1A1F00013769 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 6;
-			files = (
-				59BFF9A821FD1A2600013769 /* dump1090-mac in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		630EEDCAC39A2E2E406DF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A7123721FC4718005D0F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C0E622A251BAA86155BAF2C;
+			remoteInfo = dump1090;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		6E155CC614649963CD226083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A7123721FC4718005D0F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59E8C5D15A123100D1C9458;
+			remoteInfo = rtlsdr;
+		};
+		C126B32974511F96F961C6BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A7123721FC4718005D0F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D3C0E704FC2F21398F577B;
+			remoteInfo = "usb-1.0";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CCD2FAB28F577B1FDA488C /* descriptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = descriptor.c; path = libusb/descriptor.c; sourceTree = "<group>"; };
+		0CB73A079331F8C5B97E5A43 /* rtl-sdr_export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "rtl-sdr_export.h"; path = "include/rtl-sdr_export.h"; sourceTree = "<group>"; };
+		10527F485F9582BE0AB87C4C /* librtlsdr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librtlsdr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DB178991E7AEC71FE57A3A /* tuner_r82xx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tuner_r82xx.c; path = src/tuner_r82xx.c; sourceTree = "<group>"; };
+		14750E36A1FDA50CB3FEDB76 /* darwin_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = darwin_usb.h; path = libusb/os/darwin_usb.h; sourceTree = "<group>"; };
+		17A04437B5B66E422E2A5721 /* libdump1090.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdump1090.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CEF5136DC7A38ED4EFE775 /* hotplug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hotplug.c; path = libusb/hotplug.c; sourceTree = "<group>"; };
+		2C91D2680C310460A3C7C4B2 /* mode_s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mode_s.c; sourceTree = "<group>"; };
+		2D38AEE7C024FE4CF00DE6D0 /* Dump1090API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dump1090API.h; sourceTree = "<group>"; };
+		339615C9988FA9C0F667088B /* tuner_fc2580.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuner_fc2580.h; path = include/tuner_fc2580.h; sourceTree = "<group>"; };
+		367C361B213B21A9C877D139 /* events_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = events_posix.c; path = libusb/os/events_posix.c; sourceTree = "<group>"; };
+		38523BAEBF273D8899A1C89A /* anet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = anet.c; sourceTree = "<group>"; };
+		3B1FA9C449F613F6B26A89C1 /* tuner_fc0012.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tuner_fc0012.c; path = src/tuner_fc0012.c; sourceTree = "<group>"; };
+		423A624E1AC360E37619233A /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = libusb/version.h; sourceTree = "<group>"; };
+		42A4C74353C961DD80AC766E /* libusbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libusbi.h; path = libusb/libusbi.h; sourceTree = "<group>"; };
+		4613E83ED42FDDF29D0C1EB9 /* coaa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coaa.h; sourceTree = "<group>"; };
+		51841F7B41C04DD3A824EC24 /* strerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strerror.c; path = libusb/strerror.c; sourceTree = "<group>"; };
+		55E670E1465AA18A9CE0BE3B /* darwin_usb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = darwin_usb.c; path = libusb/os/darwin_usb.c; sourceTree = "<group>"; };
 		59440EF92202F64700AC4743 /* Dump1090 Mac Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dump1090 Mac Server.entitlements"; sourceTree = "<group>"; };
 		597085C02203000F008AA7FB /* Acknowledgements.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Acknowledgements.rtf; sourceTree = "<group>"; };
 		59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dump1090 Mac Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,11 +97,69 @@
 		59A7124B21FC4718005D0F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59A7124D21FC4718005D0F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A7124E21FC4718005D0F01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59BFF9A521FD19F200013769 /* dump1090-mac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "dump1090-mac"; path = "Dump1090 Mac Server/dump1090-mac"; sourceTree = SOURCE_ROOT; };
+		6BA1F0DE30E06A2E20A5381D /* tuner_e4k.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuner_e4k.h; path = include/tuner_e4k.h; sourceTree = "<group>"; };
+		737C6F565B277A552250F501 /* tuner_fc0013.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuner_fc0013.h; path = include/tuner_fc0013.h; sourceTree = "<group>"; };
+		75692E1CEF47C99FE9079B40 /* Dump1090Output.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Dump1090Output.c; sourceTree = "<group>"; };
+		758C5C682A24FAD58046FC95 /* events_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = events_posix.h; path = libusb/os/events_posix.h; sourceTree = "<group>"; };
+		7A20C998C21AD2590A520B67 /* mode_ac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mode_ac.c; sourceTree = "<group>"; };
+		81E61C9AC1B9C0298FE7265A /* libusb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libusb.h; path = libusb/libusb.h; sourceTree = "<group>"; };
+		83956C067DE13A9C520E2AA2 /* dump1090.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dump1090.h; sourceTree = "<group>"; };
+		88B03899C731B9CC38D34D35 /* threads_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = threads_posix.c; path = libusb/os/threads_posix.c; sourceTree = "<group>"; };
+		96C5C6E84094BD7E7168EB54 /* reg_field.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = reg_field.h; path = include/reg_field.h; sourceTree = "<group>"; };
+		97B3F1C413F9BB4D3272E40F /* sync.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sync.c; path = libusb/sync.c; sourceTree = "<group>"; };
+		9DA47966172833878FDFED3A /* Dump1090Output.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dump1090Output.h; sourceTree = "<group>"; };
+		9E1DC6459AF6EF27D9B35482 /* threads_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = threads_posix.h; path = libusb/os/threads_posix.h; sourceTree = "<group>"; };
+		9EFC58CC2916EF2F27154BDF /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = io.c; path = libusb/io.c; sourceTree = "<group>"; };
+		A8C0CCFABCBEC98B1DC904EF /* tuner_fc0013.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tuner_fc0013.c; path = src/tuner_fc0013.c; sourceTree = "<group>"; };
+		A9156DCBF24B9A815DCB61FE /* anet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = anet.h; sourceTree = "<group>"; };
+		ACB6C5DA4522DF9A2F1B79AF /* interactive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = interactive.c; sourceTree = "<group>"; };
+		AD0B476D559DD0F566786E81 /* tuner_fc2580.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tuner_fc2580.c; path = src/tuner_fc2580.c; sourceTree = "<group>"; };
+		B5E8348B612B013523083EEE /* libusb-1.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libusb-1.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9201B72A27F1C9DE6647F6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		CA6C104A156EE8319AD7BBD2 /* version_nano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version_nano.h; path = libusb/version_nano.h; sourceTree = "<group>"; };
+		CB9DD17D4EF4726DB3601A96 /* net_io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = net_io.c; sourceTree = "<group>"; };
+		CEA03CA2365636269BF10AD3 /* rtl-sdr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "rtl-sdr.h"; path = "include/rtl-sdr.h"; sourceTree = "<group>"; };
+		D435DBA04C7B61F0DE147066 /* tuner_r82xx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuner_r82xx.h; path = include/tuner_r82xx.h; sourceTree = "<group>"; };
+		D6753E4C1995BE2717F7D5E9 /* rtlsdr_i2c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rtlsdr_i2c.h; path = include/rtlsdr_i2c.h; sourceTree = "<group>"; };
+		D99F0DF5AD397991188A9CC0 /* dump1090.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dump1090.c; sourceTree = "<group>"; };
+		EB62FC5298116D4BBDD1A66A /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = Xcode/config.h; sourceTree = "<group>"; };
+		EE6022C8EF8EBA2A9FCED107 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F6485830C2C9B4DAC3AE69E1 /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = core.c; path = libusb/core.c; sourceTree = "<group>"; };
+		F6B3127F9B17D22B25503C8E /* tuner_fc0012.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuner_fc0012.h; path = include/tuner_fc0012.h; sourceTree = "<group>"; };
+		FAE775DF680D70B6ED3FA637 /* tuner_e4k.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tuner_e4k.c; path = src/tuner_e4k.c; sourceTree = "<group>"; };
+		FE992F0C1795DFC31C3D7CAF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FF34EF2186614985B7F02907 /* librtlsdr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = librtlsdr.c; path = src/librtlsdr.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		24FC8B1CDE0FC988F9ED52CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59A7123C21FC4718005D0F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476B8F72BBB57C18118D69C2 /* libusb-1.0.a in Frameworks */,
+				E58E287BDC1597A85E0D90BC /* librtlsdr.a in Frameworks */,
+				80F0EB66B832CFB96B13A178 /* libdump1090.a in Frameworks */,
+				3E6C4B30F483CF742DD73EE0 /* CoreFoundation.framework in Frameworks */,
+				25686A9F9FEA5DB7FC23C999 /* IOKit.framework in Frameworks */,
+				E64F03EB1985DF577A7CFAD9 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7466FC41B5F449D8255013E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39BEBE89971C98DEBF26E8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,11 +169,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4431FFE74C44F865AAD88993 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				F6485830C2C9B4DAC3AE69E1 /* core.c */,
+				03CCD2FAB28F577B1FDA488C /* descriptor.c */,
+				23CEF5136DC7A38ED4EFE775 /* hotplug.c */,
+				9EFC58CC2916EF2F27154BDF /* io.c */,
+				81E61C9AC1B9C0298FE7265A /* libusb.h */,
+				42A4C74353C961DD80AC766E /* libusbi.h */,
+				55E670E1465AA18A9CE0BE3B /* darwin_usb.c */,
+				14750E36A1FDA50CB3FEDB76 /* darwin_usb.h */,
+				367C361B213B21A9C877D139 /* events_posix.c */,
+				758C5C682A24FAD58046FC95 /* events_posix.h */,
+				88B03899C731B9CC38D34D35 /* threads_posix.c */,
+				9E1DC6459AF6EF27D9B35482 /* threads_posix.h */,
+				51841F7B41C04DD3A824EC24 /* strerror.c */,
+				97B3F1C413F9BB4D3272E40F /* sync.c */,
+				423A624E1AC360E37619233A /* version.h */,
+				CA6C104A156EE8319AD7BBD2 /* version_nano.h */,
+				EB62FC5298116D4BBDD1A66A /* config.h */,
+			);
+			path = libusb;
+			sourceTree = "<group>";
+		};
 		59A7123621FC4718005D0F01 = {
 			isa = PBXGroup;
 			children = (
 				59A7124121FC4718005D0F01 /* Dump1090 Mac Server */,
+				DFA4CAE12A5A975E3BBF8FED /* Vendor */,
 				59A7124021FC4718005D0F01 /* Products */,
+				FA42703FD0FD81929B99951B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */,
+				B5E8348B612B013523083EEE /* libusb-1.0.a */,
+				10527F485F9582BE0AB87C4C /* librtlsdr.a */,
+				17A04437B5B66E422E2A5721 /* libdump1090.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,12 +224,72 @@
 				59A7124521FC4718005D0F01 /* ViewController.h */,
 				59A7124621FC4718005D0F01 /* ViewController.m */,
 				59A7124821FC4718005D0F01 /* Assets.xcassets */,
-				59BFF9A521FD19F200013769 /* dump1090-mac */,
 				59A7124A21FC4718005D0F01 /* Main.storyboard */,
 				59A7124D21FC4718005D0F01 /* Info.plist */,
 				59A7124E21FC4718005D0F01 /* main.m */,
 			);
 			path = "Dump1090 Mac Server";
+			sourceTree = "<group>";
+		};
+		8AC967A12B578491705327A3 /* rtl-sdr */ = {
+			isa = PBXGroup;
+			children = (
+				96C5C6E84094BD7E7168EB54 /* reg_field.h */,
+				CEA03CA2365636269BF10AD3 /* rtl-sdr.h */,
+				0CB73A079331F8C5B97E5A43 /* rtl-sdr_export.h */,
+				D6753E4C1995BE2717F7D5E9 /* rtlsdr_i2c.h */,
+				6BA1F0DE30E06A2E20A5381D /* tuner_e4k.h */,
+				F6B3127F9B17D22B25503C8E /* tuner_fc0012.h */,
+				737C6F565B277A552250F501 /* tuner_fc0013.h */,
+				339615C9988FA9C0F667088B /* tuner_fc2580.h */,
+				D435DBA04C7B61F0DE147066 /* tuner_r82xx.h */,
+				FF34EF2186614985B7F02907 /* librtlsdr.c */,
+				FAE775DF680D70B6ED3FA637 /* tuner_e4k.c */,
+				3B1FA9C449F613F6B26A89C1 /* tuner_fc0012.c */,
+				A8C0CCFABCBEC98B1DC904EF /* tuner_fc0013.c */,
+				AD0B476D559DD0F566786E81 /* tuner_fc2580.c */,
+				12DB178991E7AEC71FE57A3A /* tuner_r82xx.c */,
+			);
+			path = "rtl-sdr";
+			sourceTree = "<group>";
+		};
+		DFA4CAE12A5A975E3BBF8FED /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4431FFE74C44F865AAD88993 /* libusb */,
+				8AC967A12B578491705327A3 /* rtl-sdr */,
+				F036B6F0040FE0DB664FBB16 /* dump1090 */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F036B6F0040FE0DB664FBB16 /* dump1090 */ = {
+			isa = PBXGroup;
+			children = (
+				38523BAEBF273D8899A1C89A /* anet.c */,
+				A9156DCBF24B9A815DCB61FE /* anet.h */,
+				4613E83ED42FDDF29D0C1EB9 /* coaa.h */,
+				D99F0DF5AD397991188A9CC0 /* dump1090.c */,
+				83956C067DE13A9C520E2AA2 /* dump1090.h */,
+				2D38AEE7C024FE4CF00DE6D0 /* Dump1090API.h */,
+				75692E1CEF47C99FE9079B40 /* Dump1090Output.c */,
+				9DA47966172833878FDFED3A /* Dump1090Output.h */,
+				ACB6C5DA4522DF9A2F1B79AF /* interactive.c */,
+				7A20C998C21AD2590A520B67 /* mode_ac.c */,
+				2C91D2680C310460A3C7C4B2 /* mode_s.c */,
+				CB9DD17D4EF4726DB3601A96 /* net_io.c */,
+			);
+			path = dump1090;
+			sourceTree = "<group>";
+		};
+		FA42703FD0FD81929B99951B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE6022C8EF8EBA2A9FCED107 /* CoreFoundation.framework */,
+				BA9201B72A27F1C9DE6647F6 /* IOKit.framework */,
+				FE992F0C1795DFC31C3D7CAF /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,16 +302,66 @@
 				59A7123B21FC4718005D0F01 /* Sources */,
 				59A7123C21FC4718005D0F01 /* Frameworks */,
 				59A7123D21FC4718005D0F01 /* Resources */,
-				59BFF9A721FD1A1F00013769 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1728AC4F6BC94D859150A249 /* PBXTargetDependency */,
+				603D8EDE62CB45AD4A913D8D /* PBXTargetDependency */,
+				B3A2142B6F0299E607B31F1C /* PBXTargetDependency */,
 			);
 			name = "Dump1090 Mac Server";
 			productName = "Dump1090 Mac Server";
 			productReference = 59A7123F21FC4718005D0F01 /* Dump1090 Mac Server.app */;
 			productType = "com.apple.product-type.application";
+		};
+		78D3C0E704FC2F21398F577B /* usb-1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A085BF16E2B17885CDBAA6 /* Build configuration list for PBXNativeTarget "usb-1.0" */;
+			buildPhases = (
+				6464890EA803CC58D4EF7592 /* Sources */,
+				24FC8B1CDE0FC988F9ED52CA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "usb-1.0";
+			productName = "usb-1.0";
+			productReference = B5E8348B612B013523083EEE /* libusb-1.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9C0E622A251BAA86155BAF2C /* dump1090 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C269EAE99950846E2D0D02 /* Build configuration list for PBXNativeTarget "dump1090" */;
+			buildPhases = (
+				494545E55DC49734E37D2EEE /* Sources */,
+				E7466FC41B5F449D8255013E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dump1090;
+			productName = dump1090;
+			productReference = 17A04437B5B66E422E2A5721 /* libdump1090.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B59E8C5D15A123100D1C9458 /* rtlsdr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F3CE64B66A8443ADE93210 /* Build configuration list for PBXNativeTarget "rtlsdr" */;
+			buildPhases = (
+				3517F6EA7B61D6744011D67F /* Sources */,
+				F39BEBE89971C98DEBF26E8C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rtlsdr;
+			productName = rtlsdr;
+			productReference = 10527F485F9582BE0AB87C4C /* librtlsdr.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +383,15 @@
 							};
 						};
 					};
+					78D3C0E704FC2F21398F577B = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					9C0E622A251BAA86155BAF2C = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					B59E8C5D15A123100D1C9458 = {
+						CreatedOnToolsVersion = 27.1;
+					};
 				};
 			};
 			buildConfigurationList = 59A7123A21FC4718005D0F01 /* Build configuration list for PBXProject "Dump1090 Mac Server" */;
@@ -146,6 +408,9 @@
 			projectRoot = "";
 			targets = (
 				59A7123E21FC4718005D0F01 /* Dump1090 Mac Server */,
+				78D3C0E704FC2F21398F577B /* usb-1.0 */,
+				B59E8C5D15A123100D1C9458 /* rtlsdr */,
+				9C0E622A251BAA86155BAF2C /* dump1090 */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +429,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3517F6EA7B61D6744011D67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844A310648BF5454072AB455 /* librtlsdr.c in Sources */,
+				0F503D60D26E167FE018A20B /* tuner_e4k.c in Sources */,
+				990270100AE8516F46E44F61 /* tuner_fc0012.c in Sources */,
+				00E1BC267489DE9A891D9046 /* tuner_fc0013.c in Sources */,
+				934891087E4FB8E671251D95 /* tuner_fc2580.c in Sources */,
+				41C046DFED9654098698D4D5 /* tuner_r82xx.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494545E55DC49734E37D2EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BA49BDA3FC8D6A91CFA0BB /* anet.c in Sources */,
+				111FC7E3FDC74FB9BA2A2CB7 /* dump1090.c in Sources */,
+				8E56E2E55BFE75E077B55ACB /* Dump1090Output.c in Sources */,
+				3E47D61FACD2D656C50AD82D /* interactive.c in Sources */,
+				FDCCCD13E187DC4E2392B3ED /* mode_ac.c in Sources */,
+				097A950F1D322164911E0534 /* mode_s.c in Sources */,
+				248056C942388BE2EDBEA3CF /* net_io.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59A7123B21FC4718005D0F01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,7 +466,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6464890EA803CC58D4EF7592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CEEC6999FCEBD3D6D31B29 /* core.c in Sources */,
+				F252AE34B6B7F829AA322EBA /* descriptor.c in Sources */,
+				111A5A91F6E939CB6CBBF8CE /* hotplug.c in Sources */,
+				761DD20E8724995D81C26BFF /* io.c in Sources */,
+				E805593308397F66D8D81EEF /* darwin_usb.c in Sources */,
+				F1F1B8834B3A49176A1E4CB3 /* events_posix.c in Sources */,
+				D99081E21BC3EDF4056E0163 /* threads_posix.c in Sources */,
+				865B69B9B28B9E5FE3477583 /* strerror.c in Sources */,
+				0C00BF92E42329D5F5DC56B4 /* sync.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1728AC4F6BC94D859150A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D3C0E704FC2F21398F577B /* usb-1.0 */;
+			targetProxy = C126B32974511F96F961C6BE /* PBXContainerItemProxy */;
+		};
+		603D8EDE62CB45AD4A913D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59E8C5D15A123100D1C9458 /* rtlsdr */;
+			targetProxy = 6E155CC614649963CD226083 /* PBXContainerItemProxy */;
+		};
+		B3A2142B6F0299E607B31F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C0E622A251BAA86155BAF2C /* dump1090 */;
+			targetProxy = 630EEDCAC39A2E2E406DF5C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		59A7124A21FC4718005D0F01 /* Main.storyboard */ = {
@@ -188,6 +514,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4CAA9F0AA1CF08DFEAE1B338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/libusb/Xcode",
+					"$(SRCROOT)/Vendor/libusb/libusb",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		59A7125C21FC4719005D0F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -292,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -307,14 +648,17 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/dump1090";
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -329,23 +673,132 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5VXZZ2GBMN;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/dump1090";
 				INFOPLIST_FILE = "Dump1090 Mac Server/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareadventures.Dump1090-Mac-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
+		722484F372BA7407EF748BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					rtlsdr_STATIC,
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/rtl-sdr/include",
+					"$(SRCROOT)/Vendor/libusb/libusb",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		81B8D6687BA8619B420FCF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = Vendor/dump1090/Dump1090Output.h;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/rtl-sdr/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8825F408A01B56B79E4265E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					rtlsdr_STATIC,
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/rtl-sdr/include",
+					"$(SRCROOT)/Vendor/libusb/libusb",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9D74C34245D77B59756869A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = Vendor/dump1090/Dump1090Output.h;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/rtl-sdr/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C0D775262CE3A95AC8EE593F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/libusb/Xcode",
+					"$(SRCROOT)/Vendor/libusb/libusb",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00A085BF16E2B17885CDBAA6 /* Build configuration list for PBXNativeTarget "usb-1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D775262CE3A95AC8EE593F /* Debug */,
+				4CAA9F0AA1CF08DFEAE1B338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F3CE64B66A8443ADE93210 /* Build configuration list for PBXNativeTarget "rtlsdr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722484F372BA7407EF748BEB /* Debug */,
+				8825F408A01B56B79E4265E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C269EAE99950846E2D0D02 /* Build configuration list for PBXNativeTarget "dump1090" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B8D6687BA8619B420FCF7B /* Debug */,
+				9D74C34245D77B59756869A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		59A7123A21FC4718005D0F01 /* Build configuration list for PBXProject "Dump1090 Mac Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
